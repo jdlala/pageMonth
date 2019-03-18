@@ -3,7 +3,7 @@ import java.util.List;
 import java.util.Map;
 
 public class Page {
-    public void getPage(List<Map<String,Object>> tmpList , int page, int pageSize){
+    public void getPage(List tmpList , int page, int pageSize){
         List<Map<String,Object>> resultList = new ArrayList<>();
         //tmpSize循环次数,pageNum需要分多少页,totalCount数组总条数,tmpIndex从第几个开始循环
         int tmpSize = 0,pageNum = 0,totalCount = tmpList.size(),tmpIndex=(page-1)*10;
